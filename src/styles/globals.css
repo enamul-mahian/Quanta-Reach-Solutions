@@ -1,0 +1,126 @@
+/* =========================================================================
+   MetaFore Technologies - Global Styles & Premium Motion Tokens
+   ========================================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #071426;
+    --electric: #168BFF;
+  }
+
+  html {
+    /* স্মুথ স্ক্রলিং এনাবল করা হয়েছে */
+    scroll-behavior: smooth;
+    background-color: var(--navy);
+  }
+
+  body {
+    @apply antialiased;
+    background-color: var(--navy);
+    color: white;
+    /* ভার্টিকাল স্ক্রল এনাবল করা হলো যা GSAP ScrollTrigger এর জন্য অত্যাবশ্যক */
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* কাস্টম প্রিমিয়াম স্ক্রলবার */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #071426;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #168BFF33;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #168BFF;
+  }
+
+  ::selection {
+    background-color: rgba(22, 139, 255, 0.3);
+    color: white;
+  }
+}
+
+/* =========================================================================
+   CUSTOM ANIMATION UTILITIES
+   ========================================================================= */
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#071426]/60 backdrop-blur-xl border border-white/5 shadow-2xl;
+  }
+
+  /* হিরো সেকশনের ভার্টিকাল টেক্সট */
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  /* হিরো সেকশনের স্ক্রল লাইন অ্যানিমেশন */
+  @keyframes scroll-line {
+    0% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  .animate-scroll-line {
+    animation: scroll-line 2s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+  }
+
+  /* কাস্টম প্রিমিয়াম সাউন্ড ওয়েভ এনিমেশন (scaleY ব্যবহার করা হয়েছে ৬০+ এফপিএস পারফরম্যান্সের জন্য) */
+  @keyframes sound-wave {
+    0%, 100% {
+      transform: scaleY(0.25);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+
+  /* সাউন্ড ওয়েভ বারগুলোর এনিমেশন এলাইনমেন্ট */
+  .animate-sound-wave {
+    transform-origin: bottom;
+    animation: sound-wave 1.2s ease-in-out infinite;
+  }
+
+  /* টেক্সট মাস্ক রিভিলের জন্য সাহায্যকারী ক্লাস */
+  .reveal-container {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+/* ৩ডি ক্যানভাসকে সম্পূর্ণ উইন্ডো জুড়ে রাখা */
+canvas {
+  display: block;
+  outline: none;
+}
+
+/* =========================================================================
+   LEGACY OVERRIDES (পুরানো হরাইজন্টাল সিস্টেমের অবশিষ্টাংশ পরিষ্কার করা)
+   ========================================================================= */
+.horizontal-scroll-container, .horizontal-section {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  overflow: visible !important;
+  scroll-snap-type: none !important;
+}

@@ -1,0 +1,92 @@
+// =========================================================================
+// MetaFore Technologies - English Dictionary
+// =========================================================================
+
+import { TranslationDictionary } from './types';
+
+export const en: TranslationDictionary = {
+  common: {
+    loading: 'Loading...',
+    error: 'An error occurred. Please try again.',
+    save: 'Save Changes',
+    cancel: 'Cancel',
+    submit: 'Submit',
+    learnMore: 'Learn More',
+    readMore: 'Read More',
+    seeAll: 'See All',
+    getStarted: 'Get Started',
+    requestQuote: 'Request a Quote',
+    bookMeeting: 'Book a Meeting',
+    whatsappUs: 'WhatsApp Us',
+    notFound: 'Page Not Found',
+    goBack: 'Go Back',
+  },
+  navigation: {
+    home: 'Home',
+    about: 'About Us',
+    services: 'Services',
+    portfolio: 'Portfolio',
+    caseStudies: 'Case Studies',
+    globalClients: 'Global Clients',
+    localClients: 'Local Clients',
+    team: 'Our Team',
+    pricing: 'Pricing',
+    blog: 'Blog & Insights',
+    contact: 'Contact',
+    adminPanel: 'Admin Portal',
+  },
+  home: {
+    heroTitle: 'Transforming Businesses with Next-Gen Technology',
+    heroSubtitle: 'We deliver scalable, secure, and innovative digital solutions tailored for startups and enterprises worldwide.',
+    heroTagline: 'Digital Solutions for Global Growth',
+    trustedBy: 'Trusted by Innovative Brands Worldwide',
+    ourServices: 'Our Core Capabilities',
+    whyChooseUs: 'Why MetaFore Technologies?',
+    provenResults: 'Proven Business Impact',
+    workProcess: 'Our Proven Workflow',
+    clientReviews: 'What Our Clients Say',
+    startProjectCTA: 'Let’s Build Something Amazing Together',
+  },
+  clients: {
+    forGlobalClients: 'For Global Enterprises',
+    forLocalClients: 'For Bangladeshi Businesses',
+    globalFeatures: [
+      'Fluent English Communication',
+      'Flexible Time Zone Alignment',
+      'Strict NDA & Data Security',
+      'International Payment Gateways',
+      'Dedicated Project Manager',
+    ],
+    localFeatures: [
+      'Project Consultation in Bangla',
+      'Flexible Payment & Installments',
+      'Face-to-Face Office Meetings',
+      'Local After-Sales Support',
+      'Free Technical Training',
+    ],
+  },
+  pricing: {
+    startingAt: 'Starting at',
+    monthly: '/month',
+    fixedPrice: 'Fixed Price',
+    customQuote: 'Custom Quote',
+    bdt: 'BDT',
+    usd: 'USD',
+  },
+  contact: {
+    nameLabel: 'Full Name',
+    emailLabel: 'Email Address',
+    phoneLabel: 'Phone / WhatsApp',
+    companyLabel: 'Company Name',
+    messageLabel: 'Project Details',
+    sendButton: 'Send Request',
+    officeAddress: 'Headquarters',
+    businessHours: 'Business Hours',
+  },
+  footer: {
+    companySummary: 'MetaFore Technologies is a premium digital agency focused on delivering cutting-edge software solutions, creative designs, and data-driven marketing strategies for global and local brands.',
+    quickLinks: 'Explore',
+    legalPages: 'Legal & Policies',
+    copyright: '© 2026 MetaFore Technologies. All rights reserved.',
+  },
+};

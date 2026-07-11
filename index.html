@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <!-- viewport-fit=cover যুক্ত ভিউপোর্ট, যা মোবাইল ব্রাউজারগুলোর নচ ও সেফ-এরিয়া সঠিকভাবে নিয়ন্ত্রণ করবে -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- গুগল ফন্ট লোডিং অপ্টিমাইজ করার জন্য Preconnect লিংকসমূহ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- ইংরেজি ও বাংলা ভাষার জন্য প্রয়োজনীয় ফন্টসমূহ (display=swap সহ, যা লেআউট শিফট প্রতিহত করবে) -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <title>MetaFore Technologies | Digital Solutions for Global Growth</title>
+    
+    <style>
+      /* পেজ লোড হওয়ার শুরুতে ব্যাকগ্রাউন্ড ফ্ল্যাশ এড়ানোর জন্য বেসিক রিসেট */
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background-color: #071426; /* Deep Navy Background */
+        font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

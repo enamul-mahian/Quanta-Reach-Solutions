@@ -1,0 +1,53 @@
+/* =========================================================================
+   MetaFore Technologies - Typography & Language Specific Rendering
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   English Typography (Corporate & Clean)
+   ------------------------------------------------------------------------- */
+html[lang="en"] body {
+  font-family: 'Inter', 'Manrope', sans-serif;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+html[lang="en"] h1, 
+html[lang="en"] h2, 
+html[lang="en"] h3, 
+html[lang="en"] h4, 
+html[lang="en"] h5, 
+html[lang="en"] h6 {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------
+   Bengali Typography (Optimized for Complex Conjuncts/যুক্তাক্ষর)
+   ------------------------------------------------------------------------- */
+html[lang="bn"] body {
+  font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Nirmala UI', Vrinda, sans-serif;
+  line-height: 1.8; /* বাংলা লেখার জন্য একটু বেশি স্পেস দেওয়া হয়েছে যেন ওপর-নিচ না লাগে */
+  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+html[lang="bn"] h1, 
+html[lang="bn"] h2, 
+html[lang="bn"] h3, 
+html[lang="bn"] h4, 
+html[lang="bn"] h5, 
+html[lang="bn"] h6 {
+  line-height: 1.4; /* ইংরেজি হেডিংয়ের চেয়ে একটু বড় লাইন হাইট */
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+
+/* বাংলা লেখায় যেন ক্যারেক্টার ট্রাঙ্কেশন (Truncation) বা অক্ষর কেটে না যায় তার জন্য সেফটি ক্লাস */
+.bn-text-safe {
+  text-overflow: ellipsis;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

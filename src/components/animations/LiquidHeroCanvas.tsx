@@ -95,7 +95,7 @@ export const LiquidHeroCanvas: React.FC = () => {
     purpleLight.position.set(5, -5, 2);
     scene.add(purpleLight);
 
-    // ৫. লিকুইড ডিফরমেশন লজিক (Custom Displacement)
+    // ۵. লিকুইড ডিফরমেশন লজিক (Custom Displacement)
     const updateLiquidMotion = (mesh: THREE.Mesh, time: number, intensity: number) => {
       const pos = mesh.geometry.attributes.position;
       const v = new THREE.Vector3();
@@ -137,14 +137,12 @@ export const LiquidHeroCanvas: React.FC = () => {
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('resize', onResize);
 
-    // ৭. অ্যানিমেশন লুপ (THREE.Timer দ্বারা আপগ্রেড করা হয়েছে)
-    const timer = new THREE.Timer();
+    // ৭. অ্যানিমেশন লুপ (নিরাপদ THREE.Clock মেথডে ফিরিয়ে আনা হয়েছে)
+    const clock = new THREE.Clock();
     let frameId: number;
 
-    const animate = (timestamp?: number) => {
-      // টাইমার আপডেট করা হচ্ছে
-      timer.update(timestamp);
-      const time = timer.getElapsed();
+    const animate = () => {
+      const time = clock.getElapsedTime();
 
       // মাউস ইন্টারপোলেশন (মসৃণতা)
       mouse.current.x = lerp(mouse.current.x, targetMouse.current.x, 0.05);
@@ -170,8 +168,7 @@ export const LiquidHeroCanvas: React.FC = () => {
       frameId = requestAnimationFrame(animate);
     };
 
-    // লুপ শুরু হচ্ছে
-    frameId = requestAnimationFrame(animate);
+    animate();
 
     // ৮. রিসোর্স ডিসপোজাল (Memory Management)
     return () => {

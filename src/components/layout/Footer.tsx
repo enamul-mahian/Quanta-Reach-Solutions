@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
         className="absolute bottom-0 left-0 w-full text-center pointer-events-none select-none opacity-[0.03] leading-none"
       >
         <span className="text-[20vw] font-black tracking-tighter text-white">
-          METAFORE
+          QUANTA REACH
         </span>
       </div>
 
@@ -124,8 +124,8 @@ export const Footer: React.FC = () => {
               {language === 'en' ? 'Contact' : 'যোগাযোগ'}
             </h4>
             <div className="flex flex-col gap-4">
-              <a href="mailto:hello@metafore.tech" className="flex items-center gap-3 text-white/60 hover:text-[#168BFF] transition-colors">
-                <Mail className="w-4 h-4" /> <span>hello@metafore.tech</span>
+              <a href="mailto:hello@quantareach.solutions" className="flex items-center gap-3 text-white/60 hover:text-[#168BFF] transition-colors">
+                <Mail className="w-4 h-4" /> <span>hello@quantareach.solutions</span>
               </a>
               <a href="tel:+880123456789" className="flex items-center gap-3 text-white/60 hover:text-[#168BFF] transition-colors">
                 <Phone className="w-4 h-4" /> <span>+880 1234 567890</span>
@@ -188,7 +188,7 @@ export const Footer: React.FC = () => {
         {/* বটম সেকশন: কপিরাইট ও লিগ্যাল */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mt-12">
           <p className="text-white/20 text-xs font-mono">
-            © 2024 METAFORE TECHNOLOGIES. ALL RIGHTS RESERVED.
+            © 2026 QUANTA REACH SOLUTIONS. ALL RIGHTS RESERVED.
           </p>
 
           <div className="flex items-center gap-8">

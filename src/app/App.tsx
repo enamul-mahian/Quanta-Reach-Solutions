@@ -18,13 +18,13 @@ export default function App() {
         {/* ৩. ডাবল-প্যানেল মেটাল কার্টেইন পেজ ট্রানজিশন */}
         <PageTransition />
 
-        {/* ৪. গ্লোবাল নোটিফিকেশন টোস্টার কন্টেইনার (মেটাফোর থিম ও ফন্ট এলাইনড) */}
+        {/* ৪. গ্লোবাল নোটিফিকেশন টোস্টার কন্টেইনার (কোয়ান্টা রিচ থিম ও ফন্ট এলাইনড) */}
         <Toaster
           position="top-right"
           reverseOrder={false}
           gutter={8}
           toastOptions={{
-            className: 'metafore-toast',
+            className: 'quantareach-toast',
             duration: 4000,
             style: {
               background: '#0D1D33',

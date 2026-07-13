@@ -10,7 +10,7 @@ import {
 } from '../../lib/motion';
 
 /**
- * METAFORE TECHNOLOGIES - LIQUID TYPOGRAPHY HERO
+ * QUANTA REACH SOLUTIONS - LIQUID TYPOGRAPHY HERO
  * এটি প্রফেশনাল এজেন্সি নোট, লিকুইড রিভিল ইফেক্ট এবং টাইপ-সেফ রাউটিং বাটন সমৃদ্ধ।
  */
 
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
         `)
         .join(language === 'en' ? '' : ' ');
 
-      // ২. টেক্সট স্প্লিটিং - "Technologies" Sub-line
+      // ২. টেক্সট স্প্লিটিং - "Solutions" Sub-line
       const subData = splitTextBilingual(
         subHeadline.innerText,
         language === 'en' ? 'chars' : 'words',
@@ -147,14 +147,14 @@ export const Hero: React.FC = () => {
             className="text-white text-[18vw] md:text-[14vw] font-black tracking-tighter leading-[0.75] select-none uppercase"
             style={{ fontStretch: 'condensed' }}
           >
-            {language === 'en' ? 'METAFORE' : 'মেটাফোর'}
+            {language === 'en' ? 'QUANTA REACH' : 'কোয়ান্টা রিচ'}
           </h1>
           
           <span 
             ref={subHeadlineRef}
             className="text-white text-[4vw] md:text-[3.2vw] font-bold tracking-[0.6em] md:tracking-[1.2em] leading-none select-none uppercase mt-2 opacity-80"
           >
-            {language === 'en' ? 'TECHNOLOGIES' : 'টেকনোলজিস'}
+            {language === 'en' ? 'SOLUTIONS' : 'সালিকুইড সলিউশনস' && 'সলিউশনস'}
           </span>
         </div>
 

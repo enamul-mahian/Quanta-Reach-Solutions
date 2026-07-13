@@ -18,7 +18,7 @@ export const Preloader: React.FC = () => {
 
   useEffect(() => {
     // সেশনে ইতিমধ্যে প্রিলোডার একবার সম্পন্ন হয়ে থাকলে এটি রেন্ডার করা হবে না
-    const preloaderRan = sessionStorage.getItem('metafore_preloader_run');
+    const preloaderRan = sessionStorage.getItem('quantareach_preloader_run');
     if (preloaderRan) {
       setIsVisible(false);
       return;
@@ -44,7 +44,7 @@ export const Preloader: React.FC = () => {
         document.body.style.overflow = '';
         setIsVisible(false);
         // সেশনে একবার চালানোর জন্য ফ্ল্যাগ সেভ করা হলো
-        sessionStorage.setItem('metafore_preloader_run', 'true');
+        sessionStorage.setItem('quantareach_preloader_run', 'true');
       }
     });
 
@@ -103,7 +103,7 @@ export const Preloader: React.FC = () => {
     const safetyTimeout = setTimeout(() => {
       document.body.style.overflow = '';
       setIsVisible(false);
-      sessionStorage.setItem('metafore_preloader_run', 'true');
+      sessionStorage.setItem('quantareach_preloader_run', 'true');
     }, 5000);
 
     return () => {
@@ -143,7 +143,7 @@ export const Preloader: React.FC = () => {
         {/* টপ কলাম: ব্র্যান্ড লোগো বা ওয়াটারমার্ক */}
         <div ref={logoRef} className="text-center mt-6">
           <span className="block text-[#168BFF] font-mono tracking-[0.3em] text-xs uppercase mb-1">
-            {language === 'en' ? 'METAFORE TECHNOLOGIES' : 'মেটাফোর টেকনোলজিস'}
+            {language === 'en' ? 'QUANTA REACH SOLUTIONS' : 'কোয়ান্টা রিচ সলিউশনস'}
           </span>
           <span className="text-white/40 text-[10px] tracking-wider uppercase">
             {language === 'en' ? 'Creative Agency Integration' : 'ক্রিয়েটিভ এজেন্সি ইন্টিগ্রেশন'}

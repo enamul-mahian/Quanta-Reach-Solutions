@@ -154,7 +154,7 @@ export const Hero: React.FC = () => {
             ref={subHeadlineRef}
             className="text-white text-[4vw] md:text-[3.2vw] font-bold tracking-[0.6em] md:tracking-[1.2em] leading-none select-none uppercase mt-2 opacity-80"
           >
-            {language === 'en' ? 'SOLUTIONS' : 'সালিকুইড সলিউশনস' && 'সলিউশনস'}
+            {language === 'en' ? 'SOLUTIONS' : 'সলিউশনস'}
           </span>
         </div>
 

@@ -20,7 +20,7 @@ import {
 const t = {
   en: {
     welcomeBack: 'Welcome Back',
-    portalSubtitle: 'Access the MetaFore operational command center.',
+    portalSubtitle: 'Access the Quanta Reach operational command center.',
     emailLabel: 'Email Address',
     passwordLabel: 'Secure Password',
     forgotPassword: 'Forgot Password?',
@@ -34,11 +34,11 @@ const t = {
     errorInvalid: 'Invalid email or password. Please try again.',
     resetSuccess: 'Password reset link sent to your email!',
     brandQuote: 'Accelerating digital evolution through cutting-edge engineering.',
-    brandSub: 'MetaFore client & management workstation.'
+    brandSub: 'Quanta Reach client & management workstation.'
   },
   bn: {
     welcomeBack: 'স্বাগতম',
-    portalSubtitle: 'মেটাফোর অপারেশনাল কমান্ড সেন্টারে প্রবেশ করুন।',
+    portalSubtitle: 'কোয়ান্টা রিচ অপারেশনাল কমান্ড সেন্টারে প্রবেশ করুন।',
     emailLabel: 'ইমেইল অ্যাড্রেস',
     passwordLabel: 'নিরাপদ পাসওয়ার্ড',
     forgotPassword: 'পাসওয়ার্ড ভুলে গেছেন?',
@@ -52,7 +52,7 @@ const t = {
     errorInvalid: 'ভুল ইমেইল বা পাসওয়ার্ড। আবার চেষ্টা করুন।',
     resetSuccess: 'পাসওয়ার্ড রিসেট লিংকটি আপনার ইমেইলে পাঠানো হয়েছে!',
     brandQuote: 'অত্যাধুনিক প্রযুক্তির মাধ্যমে ডিজিটাল বিবর্তনকে তরান্বিত করা।',
-    brandSub: 'মেটাফোর ক্লায়েন্ট ও ম্যানেজমেন্ট ওয়ার্কস্টেশন।'
+    brandSub: 'কোয়ান্টা রিচ ক্লায়েন্ট ও ম্যানেজমেন্ট ওয়ার্কস্টেশন।'
   }
 };
 
@@ -155,7 +155,7 @@ export const LoginPage: React.FC = () => {
       {/* স্প্লিট কন্টেইনার */}
       <div className="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 bg-[#0a1d37]/40 border border-white/[0.04] rounded-3xl overflow-hidden shadow-2xl backdrop-blur-md relative z-10 min-h-[600px]">
         
-        {/* বাম পাশ: ব্র্যান্ড ওভারভিউ প্যানেল */}
+        {/* বাম পাশ: ব্র্যান্ড ওভারভিউ প্যানে panel */}
         <div className="lg:col-span-5 bg-gradient-to-br from-[#0a1d37]/80 to-[#071426] p-8 md:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/[0.04] relative overflow-hidden">
           {/* গ্লো ইফেক্ট */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-[#168BFF]/10 filter blur-[60px] rounded-full" />
@@ -164,11 +164,11 @@ export const LoginPage: React.FC = () => {
             {/* ব্র্যান্ড লোগো */}
             <div className="flex items-center gap-3 mb-10">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#168BFF] to-[#7457FF] flex items-center justify-center font-bold text-xl shadow-[0_0_20px_#168BFF]">
-                M
+                Q
               </div>
               <div>
-                <h2 className="font-bold text-lg leading-none tracking-tight">MetaFore</h2>
-                <span className="text-[9px] font-mono tracking-widest text-[#168BFF] uppercase">Technologies</span>
+                <h2 className="font-bold text-lg leading-none tracking-tight">Quanta Reach</h2>
+                <span className="text-[9px] font-mono tracking-widest text-[#168BFF] uppercase">Solutions</span>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export const LoginPage: React.FC = () => {
           </div>
 
           <div className="relative z-10 text-[10px] font-mono text-white/20 tracking-wider uppercase mt-8 lg:mt-0">
-            © 2026 MetaFore. All Rights Reserved.
+            © 2026 Quanta Reach. All Rights Reserved.
           </div>
         </div>
 
@@ -214,7 +214,7 @@ export const LoginPage: React.FC = () => {
                       required
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      placeholder="admin@metafore.tech"
+                      placeholder="admin@quantareach.solutions"
                       className="w-full bg-[#071426] border border-white/[0.05] focus:border-[#168BFF]/30 outline-none rounded-xl pl-10 pr-4 py-3 text-xs transition-colors text-white"
                     />
                   </div>

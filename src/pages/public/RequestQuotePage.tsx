@@ -1,5 +1,5 @@
 // =========================================================================
-// MetaFore Technologies - Request a Quote Page (Live Firestore Integrated)
+// Quanta Reach Solutions - Request a Quote Page (Live Firestore Integrated)
 // =========================================================================
 
 import React, { useState } from 'react';
@@ -162,7 +162,7 @@ export const RequestQuotePage: React.FC = () => {
   return (
     <div className="w-full flex flex-col bg-navy min-h-screen">
       <Helmet>
-        <title>{language === 'en' ? 'Request a Quote' : 'কোটেশন অনুরোধ করুন'} | MetaFore Technologies</title>
+        <title>{language === 'en' ? 'Request a Quote' : 'কোটেশন অনুরোধ করুন'} | Quanta Reach Solutions</title>
       </Helmet>
 
       {/* Header Section */}
@@ -367,7 +367,7 @@ export const RequestQuotePage: React.FC = () => {
                     <CheckCircle2 className="w-3.5 h-3.5 text-white absolute opacity-0 peer-checked:opacity-100 pointer-events-none" />
                   </div>
                   <span className="text-sm text-soft-gray group-hover:text-white transition-colors">
-                    {language === 'en' ? 'I agree to the Privacy Policy and consent to MetaFore Technologies storing and processing my personal data for this inquiry. *' : 'আমি প্রাইভেসি পলিসিতে সম্মতি দিচ্ছি এবং এই তথ্যের সংরক্ষণে অনুমতি দিচ্ছি। *'}
+                    {language === 'en' ? 'I agree to the Privacy Policy and consent to Quanta Reach Solutions storing and processing my personal data for this inquiry. *' : 'আমি প্রাইভেসি পলিসিতে সম্মতি দিচ্ছি এবং কোয়ান্টা রিচ সলিউশনস-কে এই ইনকোয়ারির জন্য আমার ব্যক্তিগত ডেটা সংরক্ষণ ও প্রসেস করার অনুমতি দিচ্ছি। *'}
                   </span>
                 </label>
               </div>

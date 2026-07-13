@@ -6,7 +6,7 @@ import { useMagnetic } from '../../lib/motion';
 import { Menu, X, Globe, VolumeX, User, LayoutDashboard } from 'lucide-react'; // User এবং LayoutDashboard আইকন যুক্ত করা হয়েছে
 
 /**
- * METAFORE TECHNOLOGIES - PREMIUM DYNAMIC HEADER (WITH SOUND WAVE CONTROLLER & AUTH SYNC)
+ * QUANTA REACH SOLUTIONS - PREMIUM DYNAMIC HEADER (WITH SOUND WAVE CONTROLLER & AUTH SYNC)
  * এটি ল্যাঙ্গুয়েজ, ব্যাকগ্রাউন্ড সাউন্ড এবং ইউজার লগইন পোর্টাল ডাইনামিকালি নিয়ন্ত্রণ করে
  */
 
@@ -101,10 +101,10 @@ export const Header: React.FC = () => {
         <Link to="/" className="relative z-10 group flex items-center gap-3">
           <div className="flex flex-col">
             <span className="text-white text-xl md:text-2xl font-black tracking-tighter leading-none group-hover:text-[#168BFF] transition-colors uppercase">
-              METAFORE
+              QUANTA REACH
             </span>
             <span className="text-[#168BFF] text-[8px] font-mono tracking-[0.3em] uppercase leading-none mt-1">
-              Technologies
+              Solutions
             </span>
           </div>
         </Link>
@@ -229,7 +229,7 @@ export const Header: React.FC = () => {
           <Link
             to={portalPath}
             className={`mt-4 flex items-center justify-center gap-3 px-6 py-3 bg-white/[0.03] border border-white/10 rounded-full w-48 transition-all duration-500 ${
-              isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+              isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
             }`}
             style={{ transitionDelay: `${navLinks.length * 70}ms` }}
           >

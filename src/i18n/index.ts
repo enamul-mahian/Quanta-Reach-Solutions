@@ -1,5 +1,5 @@
 // =========================================================================
-// MetaFore Technologies - Translations Exporter
+// Quanta Reach Solutions - Translations Exporter
 // =========================================================================
 
 import { en } from './en';

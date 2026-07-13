@@ -1,5 +1,5 @@
 // =========================================================================
-// MetaFore Technologies - Language Context Provider
+// Quanta Reach Solutions - Language Context Provider
 // =========================================================================
 
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
@@ -20,7 +20,7 @@ interface LanguageProviderProps {
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   // লোকাল স্টোরেজ থেকে সেভ করা ভাষা চেক করা, না থাকলে ব্রাউজারের ডিফল্ট ভাষা অনুযায়ী সেট করা
   const [language, setLanguageState] = useState<Language>(() => {
-    const savedLang = localStorage.getItem('metafore_lang');
+    const savedLang = localStorage.getItem('quantareach_lang');
     if (savedLang === 'en' || savedLang === 'bn') {
       return savedLang as Language;
     }
@@ -41,7 +41,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   // ভাষা পরিবর্তন হলে তা স্টোরেজে সেভ করা এবং SEO-এর জন্য HTML lang অ্যাট্রিবিউট আপডেট করা
   useEffect(() => {
-    localStorage.setItem('metafore_lang', language);
+    localStorage.setItem('quantareach_lang', language);
     document.documentElement.lang = language;
   }, [language]);
 

@@ -1,5 +1,5 @@
 // =========================================================================
-// MetaFore Technologies - English Dictionary
+// Quanta Reach Solutions - English Dictionary
 // =========================================================================
 
 import { TranslationDictionary } from './types';
@@ -41,7 +41,7 @@ export const en: TranslationDictionary = {
     heroTagline: 'Digital Solutions for Global Growth',
     trustedBy: 'Trusted by Innovative Brands Worldwide',
     ourServices: 'Our Core Capabilities',
-    whyChooseUs: 'Why MetaFore Technologies?',
+    whyChooseUs: 'Why Quanta Reach Solutions?',
     provenResults: 'Proven Business Impact',
     workProcess: 'Our Proven Workflow',
     clientReviews: 'What Our Clients Say',
@@ -84,9 +84,9 @@ export const en: TranslationDictionary = {
     businessHours: 'Business Hours',
   },
   footer: {
-    companySummary: 'MetaFore Technologies is a premium digital agency focused on delivering cutting-edge software solutions, creative designs, and data-driven marketing strategies for global and local brands.',
+    companySummary: 'Quanta Reach Solutions is a premium digital agency focused on delivering cutting-edge software solutions, creative designs, and data-driven marketing strategies for global and local brands.',
     quickLinks: 'Explore',
     legalPages: 'Legal & Policies',
-    copyright: '© 2026 MetaFore Technologies. All rights reserved.',
+    copyright: '© 2026 Quanta Reach Solutions. All rights reserved.',
   },
 };

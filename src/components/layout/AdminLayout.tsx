@@ -96,10 +96,10 @@ export const AdminLayout: React.FC = () => {
         <div className="h-20 flex items-center justify-between px-6 border-b border-borderColor shrink-0">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-electric to-purple flex items-center justify-center font-bold text-xl shadow-[0_0_15px_rgba(22,139,255,0.4)]">
-              M
+              Q
             </div>
             <div>
-              <h2 className="font-bold text-lg leading-none tracking-tight">MetaFore</h2>
+              <h2 className="font-bold text-lg leading-none tracking-tight">Quanta Reach</h2>
               <p className="text-[9px] font-mono tracking-[0.2em] text-electric uppercase mt-1">Admin Portal</p>
             </div>
           </div>
@@ -185,7 +185,7 @@ export const AdminLayout: React.FC = () => {
             </button>
             <div className="hidden md:block">
               <p className="text-xs text-soft-gray font-mono uppercase tracking-widest">Workspace</p>
-              <h2 className="text-sm font-bold text-white">MetaFore Operations</h2>
+              <h2 className="text-sm font-bold text-white">Quanta Reach Operations</h2>
             </div>
           </div>
 

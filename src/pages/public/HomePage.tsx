@@ -10,7 +10,7 @@ import { TestimonialsSection } from '../../components/home/TestimonialsSection';
 import { ProcessSection } from '../../components/home/ProcessSection';
 
 /**
- * METAFORE TECHNOLOGIES - HOME PAGE
+ * QUANTA REACH SOLUTIONS - HOME PAGE
  * হোমপেজ থেকে টিম সেকশন সরিয়ে শুধুমাত্র কোর সার্ভিস ও প্রসেস রাখা হয়েছে।
  */
 
@@ -25,8 +25,8 @@ export const HomePage: React.FC = () => {
   // ল্যাঙ্গুয়েজ ভিত্তিক এসইও (SEO) কন্টেন্ট
   const seoData = {
     title: language === 'en' 
-      ? 'MetaFore Technologies | Digital Solutions for Global Growth' 
-      : 'মেটাফোর টেকনোলজিস | বৈশ্বিক প্রবৃদ্ধির জন্য ডিজিটাল সমাধান',
+      ? 'Quanta Reach Solutions | Digital Solutions for Global Growth' 
+      : 'কোয়ান্টা রিচ সলিউশনস | বৈশ্বিক প্রবৃদ্ধির জন্য ডিজিটাল সমাধান',
     description: language === 'en'
       ? 'Award-winning creative agency specializing in premium web development, AI solutions, and digital transformation for global and local clients.'
       : 'প্রিমিয়াম ওয়েব ডেভেলপমেন্ট, এআই সলিউশন এবং ডিজিটাল রূপান্তরে বিশেষজ্ঞ একটি পুরস্কারপ্রাপ্ত ক্রিয়েটিভ এজেন্সি।'

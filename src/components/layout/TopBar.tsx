@@ -1,5 +1,5 @@
 // =========================================================================
-// MetaFore Technologies - Top Information Bar
+// Quanta Reach Solutions - Top Information Bar
 // =========================================================================
 
 import React from 'react';
@@ -23,19 +23,19 @@ export const TopBar: React.FC = () => {
             </div>
             
             <a 
-              href="mailto:metafore.technologies.itc@gmail.com" 
+              href="mailto:hello@quantareach.solutions" 
               className="flex items-center space-x-2 hover:text-white transition-colors"
             >
               <Mail className="w-3.5 h-3.5 text-electric" />
-              <span>metafore.technologies.itc@gmail.com</span>
+              <span>hello@quantareach.solutions</span>
             </a>
             
             <a 
-              href="tel:+8801983398333" 
+              href="tel:+8801234567890" 
               className="flex items-center space-x-2 hover:text-white transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-electric" />
-              <span>+88-019833-98333</span>
+              <span>+880 1234 567890</span>
             </a>
           </div>
 

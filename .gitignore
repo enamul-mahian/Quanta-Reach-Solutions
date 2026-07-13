@@ -1,0 +1,51 @@
+# =========================================================================
+# Quanta Reach Solutions - Git Ignore Configuration
+# =========================================================================
+
+# Dependency directories (ডিপেনডেন্সি ফোল্ডারসমূহ)
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build outputs (বিল্ড ডিরেক্টরি)
+dist/
+tmp/
+out/
+build/
+
+# Local env files (সিক্রেট কী ও এপিআই কনফিগারেশন)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs (ডিবাগিং লগসমূহ)
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and IDE configurations (এডিটর সেটিংস)
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvsca
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files (অপারেটিং সিস্টেমের অপ্রয়োজনীয় ফাইল)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing (টেস্টিং ফাইলসমূহ)
+coverage/
+.nyc_output
+
+# TypeScript build cache (টাইপস্ক্রিপ্ট ক্যাশ)
+*.tsbuildinfo

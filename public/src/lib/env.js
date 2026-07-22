@@ -17,7 +17,9 @@ export const getEnvVar = (key, fallback = '') => {
 };
 
 const defaultSiteUrl =
-    typeof window !== 'undefined' ? window.location.origin : '';
+    typeof window !== 'undefined'
+        ? window.location.origin
+        : '';
 
 export const env = {
     siteUrl: getEnvVar('VITE_SITE_URL', defaultSiteUrl),

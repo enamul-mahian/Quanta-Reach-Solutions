@@ -8,6 +8,7 @@ import { RouterProvider } from 'react-router-dom';
 import { AppProviders } from '/src/app/providers.js';
 import { router } from '/src/app/router.js';
 import { ErrorBoundary } from '/src/components/common/ErrorBoundary.js';
+import 'react-quill/dist/quill.snow.css';
 // গ্লোবাল স্টাইল এবং টাইপোগ্রাফি ইমপোর্ট করা হচ্ছে
 
 

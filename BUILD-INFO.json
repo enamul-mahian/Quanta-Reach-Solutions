@@ -1,8 +1,9 @@
 {
-  "buildType": "browser-esm-upload-ready",
-  "generatedAt": "2026-07-22T16:18:33.394Z",
-  "sourceFiles": 92,
-  "candidates": 11688,
-  "cssBytes": 133967,
-  "jsFiles": 92
+  "project": "Quanta Reach Solutions",
+  "backend": "Laravel 12",
+  "database": "MySQL",
+  "frontend": "Original React browser ESM UI preserved",
+  "firebase": false,
+  "cloudinary_config_required": false,
+  "generated": "2026-07-22"
 }
